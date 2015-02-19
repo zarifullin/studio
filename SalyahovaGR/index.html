@@ -1,0 +1,72 @@
+<html>
+ <head>
+  <title>canvas</title>
+  <meta charset="utf-8">
+<h3>Саляхова Гульназ</h3>
+<h3>Вариант 12</h3>
+
+  <canvas id="smile" width="500" height="500">
+    <p>Ваш браузер не поддерживает рисование.</p>
+  </canvas>
+
+<script type="text/javascript">
+    var myCanvas = document.getElementById('smile');
+     var cxt = myCanvas.getContext('2d');
+    // Рисуем прямоугольник
+    cxt.fillStyle="#0000FF";
+	cxt.fillRect(50,160,120,265);
+    // Рисуем треугольник
+cxt.beginPath();
+cxt.moveTo(50,160);
+cxt.lineTo(110,20);
+cxt.lineTo(170,160);
+cxt.closePath();
+cxt.lineWidth = 0;
+cxt.stroke();
+cxt.fillStyle = "#0000FF";
+cxt.fill();
+   
+ // Рисуем хвостовики
+cxt.beginPath();
+cxt.moveTo(50,425);
+cxt.lineTo(0,700);
+cxt.lineTo(5,490);
+cxt.lineTo(5,425);
+cxt.lineTo(50,345);
+cxt.closePath();
+cxt.lineWidth = 0;
+cxt.stroke();
+cxt.fillStyle = 'grey';
+cxt.fill();
+  // Рисуем хвостовики
+cxt.beginPath();
+cxt.moveTo(170,425);
+cxt.lineTo(270,700);
+cxt.lineTo(225,490);
+cxt.lineTo(220,425);
+cxt.lineTo(170,345);
+cxt.closePath();
+cxt.lineWidth = 0;
+cxt.stroke();
+cxt.fillStyle = 'grey';
+cxt.fill();
+cxt.beginPath();
+cxt.strokeStyle = 'black'; 
+cxt.lineWidth = 3;
+cxt.arc(110, 195, 14, 0, Math.PI*2, true);
+cxt.closePath();
+cxt.fillStyle = 'white';
+cxt.fill();
+cxt.stroke();
+cxt.beginPath();
+cxt.strokeStyle = 'black'; 
+cxt.lineWidth = 3;
+cxt.arc(110, 260, 14, 0, Math.PI*2, true);
+cxt.closePath();
+cxt.fillStyle = 'white';
+cxt.fill();
+cxt.stroke();
+  </script>
+ </head>
+ <body>
+</html>
