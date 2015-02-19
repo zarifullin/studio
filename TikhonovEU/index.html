@@ -1,0 +1,94 @@
+<html>
+<head>
+	<title>Canvas</title>
+</head>
+<body>
+	<canvas id = "Canvas" width = "640" height = "480">
+		<p>Can't init Canvas</p>
+	</canvas>
+</body>
+</html>
+
+<script type = "text/javascript">
+	var canvas = document.getElementById('Canvas');
+	var ctx	   = canvas.getContext('2d');
+	//background
+	ctx.beginPath();
+		ctx.fillStyle 	= 'black';
+		ctx.strokeStyle = 'green';
+		ctx.lineWidth 	= 10;
+			ctx.fillRect(0, 0, 640, 480);
+			ctx.strokeRect(0, 0, 640, 480);
+	//neck
+	ctx.beginPath();
+		ctx.fillStyle 	= 'DeepSkyBlue';
+			ctx.fillRect(270, 105, 100, 25);
+	//body
+	ctx.beginPath();
+		ctx.fillStyle 	= 'DeepSkyBlue';
+			ctx.fillRect(220, 130, 200, 200);
+	//head
+	ctx.beginPath();
+		ctx.fillStyle 	= 'white';
+		ctx.strokeStyle = 'silver';
+		ctx.lineWidth 	= 6;
+			ctx.fillRect(245, 25, 150, 80);
+			ctx.strokeRect(245, 25, 150, 80);
+	//left-hand
+	ctx.beginPath();
+		ctx.fillStyle 	= 'white';
+		ctx.strokeStyle = 'silver';
+		ctx.lineWidth 	= 4;
+			ctx.fillRect(100, 125, 125, 55);
+			ctx.strokeRect(100, 125, 125, 55);
+	//right-hand
+	ctx.beginPath();
+		ctx.fillStyle 	= 'white';
+		ctx.strokeStyle = 'silver';
+		ctx.lineWidth 	= 4;
+			ctx.fillRect(415, 125, 125, 55);
+			ctx.strokeRect(415, 125, 125, 55);
+	//left-foot
+	ctx.beginPath();
+		ctx.fillStyle 	= 'white';
+		ctx.strokeStyle = 'silver';
+		ctx.lineWidth 	= 4;
+			ctx.fillRect(215, 330, 80, 125);
+			ctx.strokeRect(215, 330, 80, 125);
+	//right-foot
+	ctx.beginPath();
+		ctx.fillStyle 	= 'white';
+		ctx.strokeStyle = 'silver';
+		ctx.lineWidth 	= 4;
+			ctx.fillRect(345, 330, 80, 125);
+			ctx.strokeRect(345, 330, 80, 125);
+	//left-eye
+	ctx.beginPath();
+		ctx.fillStyle 	= 'Orchid';
+			ctx.fillRect(270, 45, 30, 13);
+	//right-eye
+	ctx.beginPath();
+		ctx.fillStyle 	= 'Orchid';
+			ctx.fillRect(335, 45, 30, 13);
+	//mounth
+	ctx.beginPath();
+		ctx.moveTo(300, 85);
+		ctx.lineTo(325, 85);
+		ctx.lineWidth = 1;
+		ctx.strokeStyle = 'FireBrick';
+			ctx.stroke();
+	//bottle
+	ctx.beginPath();
+		ctx.fillStyle = 'white';
+		ctx.font = "bold 12pt Trebuchet MS Narrow";
+			ctx.fillText("Bottle 3 charges", 240, 170);
+	//author
+	ctx.beginPath();
+		ctx.fillStyle = 'Salmon';
+		ctx.font = "bold 9pt Trebuchet MS Narrow";
+			ctx.fillText("Тихонов Э.Ю.", 420, 143);
+	ctx.beginPath();
+		ctx.fillStyle = 'Salmon';
+		ctx.font = "bold 9pt Trebuchet MS Narrow";
+			ctx.fillText("М-11", 425, 160);
+</script>
