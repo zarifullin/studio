@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Lab work №8</title>
+  <meta charset="utf-8">
+  <body>
+  <em><strong>
+  <h3>Gilimkhanov Artur M-11</h3>
+  <h3>Option №4</h3>
+  </em></strong>
+  </body>
+
+  <canvas id="smile" width="640" height="420">
+    <p>Ваш браузер не поддерживает рисование.</p>
+  </canvas>
+</head>
+
+<script type="text/javascript">
+    var myCanvas = document.getElementById('smile');
+	var ctx = myCanvas.getContext('2d');
+	
+		// body
+	ctx.beginPath();
+    ctx.moveTo(470,122);
+	ctx.lineTo(470,300);
+	ctx.strokeStyle = 'silver';
+	ctx.lineWidth = 40;
+	ctx.lineCap = 'round'
+	
+	ctx.stroke();
+	
+	// pileus
+	ctx.beginPath();
+	ctx.strokeStyle = 'black'; 
+	ctx.lineWidth = 4;
+	ctx.arc(470, 120, 100, 0, Math.PI, true);
+	ctx.closePath();
+	ctx.fillStyle = 'red';
+	ctx.fill();
+	ctx.stroke();
+	
+	// spots
+	ctx.beginPath();
+	ctx.strokeStyle = 'black'; 
+	ctx.lineWidth = 2;
+	ctx.arc(405, 95, 17, 0, Math.PI*2, true);
+	ctx.closePath();
+	ctx.fillStyle = 'white';
+	ctx.fill();
+	ctx.stroke();
+	
+		ctx.beginPath();
+	ctx.strokeStyle = 'black'; 
+	ctx.lineWidth = 2;
+	ctx.arc(445, 55, 17, 0, Math.PI*2, true);
+	ctx.closePath();
+	ctx.fillStyle = 'white';
+	ctx.fill();
+	ctx.stroke();
+	
+		ctx.beginPath();
+	ctx.strokeStyle = 'black'; 
+	ctx.lineWidth = 2;
+	ctx.arc(465, 95, 17, 0, Math.PI*2, true);
+	ctx.closePath();
+	ctx.fillStyle = 'white';
+	ctx.fill();
+	ctx.stroke();
+	
+		ctx.beginPath();
+	ctx.strokeStyle = 'black'; 
+	ctx.lineWidth = 2;
+	ctx.arc(505, 58, 17, 0, Math.PI*2, true);
+	ctx.closePath();
+	ctx.fillStyle = 'white';
+	ctx.fill();
+	ctx.stroke();
+	
+		ctx.beginPath();
+	ctx.strokeStyle = 'black'; 
+	ctx.lineWidth = 2;
+	ctx.arc(530, 95, 17, 0, Math.PI*2, true);
+	ctx.closePath();
+	ctx.fillStyle = 'white';
+	ctx.fill();
+	ctx.stroke();
+
+</script>
