@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>canvas</title>
+  <meta charset="utf-8">
+
+  <canvas id="smile" width="320" height="420">
+    <p>Ваш браузер не поддерживает рисование.</p>
+  </canvas>
+
+<script type="text/javascript">
+    var myCanvas = document.getElementById('smile');
+
+     var cxt = myCanvas.getContext('2d');
+   
+     
+       
+     //голова
+      cxt.beginPath();
+      cxt.strokeStyle = 'Black'; 
+      cxt.lineWidth = 2;
+      cxt.arc(130, 73, 10, 0, Math.PI*2, true);
+      cxt.resetTransform();
+      cxt.closePath();
+      cxt.fillStyle = 'Black';
+      cxt.fill(); 
+      cxt.stroke();
+
+      // часть головы
+ 	cxt.fillStyle='Black';
+	cxt.fillRect(119,69,22,60);
+
+   //тело
+      cxt.beginPath();
+      cxt.scale(1, 2);
+      cxt.strokeStyle = 'Black'; 
+      cxt.lineWidth = 2;
+      cxt.arc(130, 90, 50, 0, Math.PI*2, true);
+      cxt.resetTransform();
+      cxt.closePath();
+      cxt.fillStyle = 'Red';
+      cxt.fill(); 
+      cxt.stroke();
+
+//спинной разделитель
+      cxt.strokeStyle = 'black';
+	cxt.moveTo(130,80);
+	cxt.lineTo(130,280);
+	cxt.stroke();
+
+// Рисуем точки
+     cxt.fillStyle='Black';
+     cxt.beginPath();
+     cxt.arc(120,110,6,0,Math.PI*2,true);
+     cxt.closePath();
+     cxt.stroke();
+     cxt.fill();
+
+     cxt.fillStyle='Black';
+     cxt.beginPath();
+     cxt.arc(140,110,6,0,Math.PI*2,true);
+     cxt.closePath();
+     cxt.stroke();
+     cxt.fill();
+
+     cxt.fillStyle='Black';
+     cxt.beginPath();
+     cxt.arc(115,140,6,0,Math.PI*2,true);
+     cxt.closePath();
+     cxt.stroke();
+     cxt.fill();
+
+     cxt.fillStyle='Black';
+     cxt.beginPath();
+     cxt.arc(145,140,6,0,Math.PI*2,true);
+     cxt.closePath();
+     cxt.stroke();
+     cxt.fill();
+
+     cxt.fillStyle='Black';
+     cxt.beginPath();
+     cxt.arc(100,170,6,0,Math.PI*2,true);
+     cxt.closePath();
+     cxt.stroke();
+     cxt.fill();
+
+     cxt.fillStyle='Black';
+     cxt.beginPath();
+     cxt.arc(165,170,6,0,Math.PI*2,true);
+     cxt.closePath();
+     cxt.stroke();
+     cxt.fill();
+
+     cxt.scale(1, 1,8);
+     cxt.fillStyle='Black';
+     cxt.beginPath();
+     cxt.arc(120,190,6,0,Math.PI*2,true);
+     cxt.closePath();
+     cxt.stroke();
+     cxt.fill();
+
+     cxt.fillStyle='Black';
+     cxt.beginPath();
+     cxt.arc(143,191,6,0,Math.PI*2,true);
+     cxt.closePath();
+     cxt.stroke();
+     cxt.fill();
+
+     cxt.fillStyle='Black';
+     cxt.beginPath();
+     cxt.arc(160,220,6,0,Math.PI*2,true);
+     cxt.closePath();
+     cxt.stroke();
+     cxt.fill();
+
+     cxt.fillStyle='Black';
+     cxt.beginPath();
+     cxt.arc(105,220,6,0,Math.PI*2,true);
+     cxt.closePath();
+     cxt.stroke();
+     cxt.fill();
+
+     cxt.fillStyle='Black';
+     cxt.beginPath();
+     cxt.arc(119,256,6,0,Math.PI*2,true);
+     cxt.closePath();
+     cxt.stroke();
+     cxt.fill();
+
+     cxt.fillStyle='Black';
+     cxt.beginPath();
+     cxt.arc(141,256,6,0,Math.PI*2,true);
+     cxt.closePath();
+     cxt.stroke();
+     cxt.fill();
+
+    //усики
+     cxt.strokeStyle = 'Black';
+     cxt.lineWidth = 5,5;
+     cxt.beginPath();
+     cxt.moveTo(130, 68);
+     cxt.quadraticCurveTo(100, 30, 90, 50);
+     cxt.stroke();
+
+     
+     cxt.strokeStyle = 'Black';
+     cxt.lineWidth = 5,5;
+     cxt.beginPath();
+     cxt.moveTo(130, 68);
+     cxt.quadraticCurveTo(160, 30, 170, 50);
+     cxt.stroke();
+
+     //текст
+      cxt.fillStyle = 'red';
+      cxt.font = "italic 30pt Arial";
+      cxt.fillText("Ахметов Радик.", 20, 30);
+      cxt.stroke();
+
+      //текст
+      cxt.fillStyle = 'blue';
+      cxt.font = "italic 12pt Arial";
+      cxt.fillText("М-11 Лаб. №7 (Божья Коровка)", 20, 330);
+      cxt.fillText("Вариант 1", 80, 350);
+      cxt.stroke();
+
+  </script>
+ </head>
+ <body>
+</html>
