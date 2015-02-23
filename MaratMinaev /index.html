@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>canvas</title>
+  <meta charset="utf-8">
+
+  <canvas id="smile" width="800" height="800">
+    <p>Ваш браузер не поддерживает рисование.</p>
+  </canvas>
+
+<script type="text/javascript">
+    var myCanvas = document.getElementById('smile');
+     var cxt = myCanvas.getContext('2d');
+    
+// lines 1
+cxt.strokeStyle = 'black';
+	cxt.moveTo(100,100);
+	cxt.lineTo(85,120);
+	cxt.stroke();
+// lines 2 
+cxt.strokeStyle = 'green';
+	cxt.moveTo(85,120);
+	cxt.lineTo(85,200);
+	cxt.stroke();
+// lines 3
+cxt.strokeStyle = 'black';
+	cxt.moveTo(85,200);
+	cxt.lineTo(100,220);
+	cxt.stroke();
+// lines 4
+cxt.strokeStyle = 'black';
+	cxt.moveTo(100,220);
+	cxt.lineTo(200,220);
+	cxt.stroke();
+// lines 5
+cxt.strokeStyle = 'black';
+	cxt.moveTo(200,220);
+	cxt.lineTo(220,200);
+	cxt.stroke();
+// lines 6
+cxt.strokeStyle = 'black';
+	cxt.moveTo(220,200);
+	cxt.lineTo(220,120);
+	cxt.stroke();
+// lines 7
+cxt.strokeStyle = 'black';
+	cxt.moveTo(220,120);
+	cxt.lineTo(200,100);
+	cxt.stroke();
+// lines 8
+cxt.strokeStyle = 'black';
+	cxt.moveTo(200,100);
+	cxt.lineTo(100,100);
+	cxt.stroke();
+// lines 9
+cxt.strokeStyle = 'black';
+	cxt.moveTo(200,100);
+	cxt.lineTo(225,65);
+	cxt.stroke();
+   
+// lines 10
+cxt.strokeStyle = 'black';
+	cxt.moveTo(100,100);
+	cxt.lineTo(125,65);
+	cxt.stroke();
+// lines 11
+cxt.strokeStyle = 'black';
+	cxt.moveTo(125,65);
+	cxt.lineTo(225,65);
+	cxt.stroke();
+// lines 12
+cxt.strokeStyle = 'black';
+	cxt.moveTo(225,65);
+	cxt.lineTo(245,85);
+	cxt.stroke();
+// lines 13
+cxt.strokeStyle = 'black';
+	cxt.moveTo(245,85);
+	cxt.lineTo(220,120);
+	cxt.stroke();
+// lines 14
+cxt.strokeStyle = 'black';
+	cxt.moveTo(245,85);
+	cxt.lineTo(245,175);
+	cxt.stroke();
+// lines 15
+cxt.strokeStyle = 'black';
+	cxt.moveTo(245,175);
+	cxt.lineTo(220,200);
+	cxt.stroke();
+// круг
+     cxt.fillStyle="black";
+     cxt.beginPath();
+		
+     cxt.arc(145,80,8,0,Math.PI*2,true);
+     cxt.closePath();
+     cxt.stroke();
+     cxt.fill();
+// круг
+     cxt.fillStyle="black";
+     cxt.beginPath();
+     cxt.arc(185,80,8,0,Math.PI*2,true);
+     cxt.closePath();
+     cxt.stroke();
+     cxt.fill();
+// круг
+     cxt.fillStyle="black";
+     cxt.beginPath();
+     cxt.arc(150,160,8,0,Math.PI*2,true);
+     cxt.closePath();
+     cxt.stroke();
+     cxt.fill();
+// круг
+     cxt.fillStyle="black";
+     cxt.beginPath();
+     cxt.arc(120,130,8,0,Math.PI*2,true);
+     cxt.closePath();
+     cxt.stroke();
+     cxt.fill();
+// круг
+     cxt.fillStyle="black";
+     cxt.beginPath();
+     cxt.arc(180,130,8,0,Math.PI*2,true);
+     cxt.closePath();
+     cxt.stroke();
+     cxt.fill();
+// круг
+     cxt.fillStyle="black";
+     cxt.beginPath();
+     cxt.arc(180,190,8,0,Math.PI*2,true);
+     cxt.closePath();
+     cxt.stroke();
+     cxt.fill();
+// круг
+     cxt.fillStyle="black";
+     cxt.beginPath();
+     cxt.arc(120,190,8,0,Math.PI*2,true);
+     cxt.closePath();
+     cxt.stroke();
+     cxt.fill();
+// круг
+	cxt.fillStyle="black";
+     cxt.beginPath();
+cxt.scale(1,2);
+     cxt.arc(235,70,4,0,2*Math.PI*2,true);
+     cxt.closePath();
+     cxt.stroke();
+     cxt.fill();
+//текст
+      cxt.fillStyle = 'red';
+      cxt.font = "italic 10pt Times New Roman";
+      cxt.fillText("Минаев М.Р.", 0, 135);
+      cxt.stroke();
+      //текст
+      cxt.fillStyle = 'red';
+      cxt.font = "italic 8pt Times New Roman";
+      cxt.fillText("М-11 Лаб. №1 (Игральный кубик)", 0, 150);
+      cxt.fillText("Вариант 9", 0, 165);
+      cxt.stroke();
+  </script>
+ </head>
+ <body>
+</html>
